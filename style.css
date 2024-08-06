@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'popins',sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+.Header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0,0, 0.8)0,rgba(0,0,0,0)60%,rgba(0,0,0,0.8)100%),url(https://assets.nflxext.com/ffe/siteui/vlv3/826348c2-cdcb-42a0-bc11-a788478ba5a2/6d20b198-e7ab-4e9f-a1aa-666faa0298f9/IN-en-20240729-POP_SIGNUP_TWO_WEEKS-perspective_WEB_a67d8c9e-8121-4a74-98e4-8005eb2df227_large.jpg);
+    background-size:cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    width:150px;
+    cursor: pointer;
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background:#db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.lang-btn{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+}
+.lang-btn img{
+    width: 10px;
+    margin-left: 10px;
+
+}
+.Header-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 60px;
+    
+    
+}
+@font-face {
+    font-family:Netflix ;
+    src: url(NetflixSans-Bold.otf);
+}
+  .Header h1{
+    font-family: Netflix;
+    /* margin-left: -7%; */
+   font-size: 50px;
+   line-height:70px;
+   font-weight: bold;
+   width: 120%;
+   margin-top: 60px;
+  }
+
+  .heading{
+    font-size: 50px;
+    color: white;
+    padding-left: 192px;
+    padding-top: 103px;
+  }
+  .Email-signup{
+    background: #00000069;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+  }
+  .Email-signup input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+background: #1b1a1a;
+color: white;
+  }
+  .Email-signup1 button{
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .signup{
+    height: fit-content;
+    width: 600px;
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 10px;
+    
+    align-items: center;
+    justify-content: center;
+  }
+.get{
+    height: 45px;
+    width: 150px;
+    background-color: #db0001;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 21px;
+}
+input[type="email"]{
+    background-color: rgba(47, 42, 42, 0.816);
+    padding: 15px 10px;
+    width: 400px;
+    border: 1px solid rgb(114, 114, 114);
+
+}
+input[type="email"]::placeholder{
+    color: rgb(221, 218, 218);
+    font-size: 16px;
+}
+
+  .features{
+  
+    font-size: 22px;
+    width: 100%;
+    
+  }
+
+  .row{
+    display: flex;
+    width: 100%; 
+    align-items: center;
+    padding: 49px 0;
+ 
+    border-bottom: 5px solid rgb(52, 50, 50);
+  }
+  .footer .row{
+    border: none;
+  }
+  .row .text-col{
+    margin-top: -5%;
+    margin-left: 3%;
+  }
+
+  .text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+  }
+
+  .img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+  }
+   .img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+
+   }
+   .features h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 113px;
+    margin-left: 1px;
+}
+  
+   .faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+   }
+   .faq h2{
+    font-weight:500;
+    font-size:40px;
+   }
+    
+   .according {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 1142px;
+}
+
+   .according li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+
+   }
+
+   .according li label{
+    display:flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+   }
+   label::after{
+    content:'+';
+    font-size:34px;
+    position: absolute;
+    right:20px;
+    transition: transform 0.5s;
+   }
+   input[type="radio"]{
+    display:none;
+   }
+
+   .according .contents{
+    background:#303030;
+    text-align: right;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s,    padding 0.5s;
+
+   }
+   .according input[type="radio"]:checked + label + .contents{
+    max-height: 600px;
+    padding: 30px 20px;
+   }
+   .according input[type="radio"]:checked + label ::after{
+    transform: rotate(135deg);
+   }
+   .change{
+    padding-left: 150px;
+   }
+   .modify{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom:  100px;
+   align-items: center;
+   }
+   .footer{
+    padding: 40px 200px;
+    border-top: 6px solid #333;
+    /* background-color: #db0001; */
+    color: #777;
+   }
+   .footer h2 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    margin-left: -2px;
+}
+   .footer .col{
+    flex-basis:25%;
+    flex-grow: 1;
+    margin-bottom:20px ;
+
+   }
+   .footer .col a{
+    display: block;
+    text-decoration: none;
+    color:#777;
+    font-size: 14px;
+    margin-bottom: 10px;
+   }
+   .lang2-btn{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 10px;
+    padding-right: 21px;
+    margin-bottom: 20px;   
+   }
+   .lang2-btn img{
+    width: 10px;
+    margin-left: 10px;
+   }
+   .last_one{
+    padding-left: 3px;
+   }
